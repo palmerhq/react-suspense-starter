@@ -18,6 +18,6 @@
     "react-dom": "./vendor/react-dom.development.js"
   },
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "NODE_ENV=development parcel src/index.html"
   }
 }
