@@ -1,35 +1,11 @@
 import React from 'react';
 import { unstable_createRoot as createRoot } from 'react-dom';
-import { createCache, createResource } from 'simple-cache-provider';
+import App from './App';
 
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const root = createRoot(document.getElementById('app'));
 
-const cache = createCache();
-
-// Lazy load!
-const getThing = createResource(
-  () => sleep(1000).then(() => import('./Thing').then(mod => mod.default)),
-  thing => thing
-);
-
-const Thing = props => {
-  const Comp = getThing.read(cache, props);
-  return <Comp {...props} />;
+const render = Comp => {
+  root.render(<Comp />);
 };
 
-function App() {
-  return (
-    <React.Fragment>
-      <h1>Suspense</h1>
-      <React.Placeholder delayMs={500} fallback={<div>🌀 'Loading....'</div>}>
-        <Thing />
-      </React.Placeholder>
-    </React.Fragment>
-  );
-}
-
-createRoot(window.app).render(<App />);
-
-if (module.hot) {
-  module.hot.accept();
-}
+render(App);
