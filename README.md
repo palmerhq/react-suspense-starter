@@ -1,0 +1,3 @@
+# React Suspense Starter
+
+So you can get ahead of it all...

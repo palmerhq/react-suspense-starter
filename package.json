@@ -1,0 +1,23 @@
+{
+  "name": "react-suspense-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "parcel": "^1.9.7",
+    "parcel-bundler": "^1.9.7"
+  },
+  "dependencies": {
+    "simple-cache-provider": "^0.7.0"
+  },
+  "alias": {
+    "react": "./vendor/react.development.js",
+    "react-dom": "./vendor/react-dom.development.js"
+  },
+  "scripts": {
+    "start": "parcel src/index.html"
+  }
+}
