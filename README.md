@@ -16,6 +16,12 @@ yarn start
 
 Open up `localhost:1234` and you are good to go. Unlike the current release of React (16.4), a suspense-enabled build of React and ReactDOM live in the `vendor` directory. These are then aliased with Parcel. 
 
+## Projects to play with
+
+- [palmerhq/router-suspense](https://github.com/palmerhq/router-suspense) - Suspense-friendly React Router 4 clone
+- [@reach/router](https://github.com/reach/router) - Ryan's new Router
+- [threepointone/css-suspense](https://github.com/threepointone/css-suspense) - CSS loading for React
+
 ---
 MIT License
 
