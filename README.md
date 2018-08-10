@@ -22,6 +22,10 @@ Open up `localhost:1234` and you are good to go. Unlike the current release of R
 - [@reach/router](https://github.com/reach/router) - Ryan's new Router
 - [threepointone/css-suspense](https://github.com/threepointone/css-suspense) - CSS loading for React
 
+## More information
+
+[fresh-async-react](https://github.com/sw-yx/fresh-async-react) has a reverse-chronological timeline of everyone's code, demos, and discussions.
+
 ---
 MIT License
 
