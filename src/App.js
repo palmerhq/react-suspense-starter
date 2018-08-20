@@ -1,10 +1,9 @@
 import React from 'react';
 import { createCache, createResource } from 'simple-cache-provider';
+import { cache } from './cache';
 import { hot } from 'react-hot-loader';
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-const cache = createCache();
 
 // Lazy load!
 const getThing = createResource(
