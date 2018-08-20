@@ -1,5 +1,6 @@
 import React from 'react';
 import { createCache, createResource } from 'simple-cache-provider';
+import { hot } from 'react-hot-loader';
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -27,4 +28,6 @@ function App() {
   );
 }
 
-export default App;
+// Setup react-hot-loader for Parcel.
+// This is removed in production automagically.
+export default hot(module)(App);

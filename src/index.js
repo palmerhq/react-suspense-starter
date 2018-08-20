@@ -4,8 +4,4 @@ import App from './App';
 
 const root = createRoot(document.getElementById('app'));
 
-const render = Comp => {
-  root.render(<Comp />);
-};
-
-render(App);
+root.render(<App />);
